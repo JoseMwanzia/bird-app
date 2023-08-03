@@ -1,17 +1,17 @@
-require "test_helper"
+# frozen_string_literal: true
+
+require 'test_helper'
 
 class BirdTest < ActiveSupport::TestCase
-  test "should not save bird without name" do
+  test 'should not save bird without name' do
     bird = Bird.new
-    assert_not bird.save
+    assert_not bird.save, "saved a bird without a name"
     # assert true
   end
 
-  test "should report error" do
-    # some_undefined_variable is not defined elsewhere in the test case
-    assert_not "test" do
-      some_undefined_variable
+  test 'should save bird with name' do
+    bird = Bird.new(name: "Test")
+    assert bird.save,  'idk test' do
     end
   end
-  
 end
