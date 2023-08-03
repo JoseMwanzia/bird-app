@@ -11,7 +11,7 @@ class BirdTest < ActiveSupport::TestCase
 
   test 'should save bird with name' do
     bird = Bird.new(name: "Test")
-    assert bird.save,  'idk test' do
+    assert bird.save, 'idk test' do
     end
   end
 end
